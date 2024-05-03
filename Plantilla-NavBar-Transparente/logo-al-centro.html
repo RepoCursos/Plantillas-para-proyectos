@@ -10,36 +10,42 @@
   </head>
   <body>
     <!-- NavBar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark p-md-3">
       <div class="container">
-        <a href="#" class="navbar-brand"><img src="/img/restaurant/logo-pizzeria.png" alt="" class="logo" /></a>
         <button 
         type="button"
-        class="navbar-toggler collapsed"
-        data-bs-target="#navbarNav"
+        class="navbar-toggler order-2 order-md-1"
+        data-bs-target=".navbar-collapse"
         data-bs-toggle="collapse"
         aria-controls="navbarNav"
         aria-expanded="false"
-        aria-label="Toggle Navbar" >
+        aria-label="Toggle navigation" >
         <span class="toggler-icon top-bar"></span>
         <span class="toggler-icon middle-bar"></span>
         <span class="toggler-icon bottom-bar"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
-          <div class="row navbar-nav">
-            <div class="col nav-item">
-              <a href="#" class="nav-link fw-bold text-white">LOCALES</a>
-            </div>
-            <div class="col nav-item">
-              <a href="#" class="nav-link fw-bold text-white">CARTA</a>
-            </div>
-            <div class="col nav-item">
-              <a href="#" class="nav-link fw-bold text-white">NOSOTROS</a>
-            </div>
-            <div class="col nav-item">
-              <a href="#" class="nav-link fw-bold text-white">CONTACTO</a>
-            </div>
-          </div>
+        <div class="collapse navbar-collapse order-3 order-md-2" id="navbar-start">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a href="#" class="nav-link fw-bold text-white">LOCALES</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link fw-bold text-white">CARTA</a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="#" class="navbar-brand order-1 order-md-3"><img src="/img/restaurant/logo-pizzeria.png" alt="" class="logo" /></a>
+
+        <div class="collapse navbar-collapse order-4 order-md-4" id="navbar-end">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a href="#" class="nav-link fw-bold text-white">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link fw-bold text-white">CONTACTO</a>
+                </li>
+            </ul>
         </div>
       </div>
     </nav>

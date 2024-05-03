@@ -5,50 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu Transparente con posicion a la derecha</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
-
-    <!-- 
-      Estos estilos van en una hoja de estilo aparte como mandan las mejores practicas 
-      En esta ocacion es a modo tutorial
-    -->
-
-    <style>
-      .banner-image {
-        background-image: url("/img/banner.jpg");
-        background-size: cover;
-      }
-    </style>
+    <!-- Estilo Personalizados -->
+    <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
     <!-- NavBar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
       <div class="container">
-        <a class="navbar-brand" href="#">Video YouTube</a>
+        <a href="#" class="navbar-brand"><img src="/img/restaurant/logo-pizzeria.png" alt="" class="logo" /></a>
         <button
           type="button"
-          class="navbar-toggler"
+          class="navbar-toggler collapsed"
           data-bs-target="#navbarNav"
           data-bs-toggle="collapse"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle Navbar">
-          <span class="navbar-toggler-icon"></span>
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="#" class="nav-link text-white">Home</a>
+              <a href="#" class="nav-link fw-bold text-white">LOCALES</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white">About</a>
+              <a href="#" class="nav-link fw-bold text-white">CARTA</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white">Blog</a>
+              <a href="#" class="nav-link fw-bold text-white">NOSOTROS</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link text-white">Contact</a>
+              <a href="#" class="nav-link fw-bold text-white">CONTACTO</a>
             </li>
           </ul>
         </div>
@@ -56,8 +45,9 @@
     </nav>
 
     <!-- Banner Imagen -->
-    <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center ">
-    </div>
+    <section>
+      <img src="img/restaurant/banner.jpg" alt="" class="imagen"/>
+    </section>
 
     <!-- Area de contenido del resto de la pagina -->
     <section class="container my-5 d-grid gap-5">
@@ -101,6 +91,16 @@
           nav.classList.add('bg-dark', 'shadow');
         } else {
           nav.classList.remove('bg-dark', 'shadow');
+        }
+      });
+
+      var button = document.querySelector('button');
+
+      window.addEventListener('onclick', function(){
+        if (button = 'active') {
+          button.classList.add
+        } else {
+          
         }
       });
     </script>
